@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Términos y Condiciones para Técnicos — ProServicios</title>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700&family=Source+Serif+4:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --azul:       #1A4FA8;
+    --azul-oscuro:#0D2D6E;
+    --naranja:    #F97316;
+    --fondo:      #F7F8FC;
+    --blanco:     #FFFFFF;
+    --gris-texto: #374151;
+    --gris-suave: #8892A4;
+    --borde:      #E2E8F4;
+    --radio:      12px;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Source Serif 4', Georgia, serif;
+    background: var(--fondo);
+    color: var(--gris-texto);
+    line-height: 1.8;
+    font-size: 16px;
+  }
+  header {
+    background: linear-gradient(135deg, var(--azul-oscuro) 0%, #1E3A5F 60%, #1A4FA8 100%);
+    padding: 56px 24px 48px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  header::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 20% 80%, rgba(249,115,22,0.15) 0%, transparent 60%);
+  }
+  .logo-marca {
+    display: inline-flex; align-items: center;
+    gap: 10px; margin-bottom: 28px; position: relative;
+  }
+  .logo-icono {
+    width: 44px; height: 44px;
+    background: var(--naranja); border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .logo-icono svg { width: 24px; height: 24px; fill: white; }
+  .logo-nombre {
+    font-family: 'Sora', sans-serif;
+    font-weight: 700; font-size: 22px; color: white; letter-spacing: -0.3px;
+  }
+  header h1 {
+    font-family: 'Sora', sans-serif;
+    font-weight: 300; font-size: clamp(24px, 4.5vw, 36px);
+    color: white; position: relative; margin-bottom: 6px;
+  }
+  .header-sub {
+    font-family: 'Sora', sans-serif; font-weight: 400;
+    font-size: 14px; color: rgba(255,255,255,0.7);
+    position: relative; margin-bottom: 16px;
+  }
+  .badges {
+    display: flex; gap: 10px; justify-content: center;
+    flex-wrap: wrap; position: relative;
+  }
+  .badge {
+    background: rgba(255,255,255,0.12);
+    border: 1px solid rgba(255,255,255,0.22);
+    color: rgba(255,255,255,0.85);
+    font-family: 'Sora', sans-serif;
+    font-size: 12px; font-weight: 600;
+    padding: 5px 14px; border-radius: 999px; letter-spacing: 0.4px;
+  }
+  .badge.naranja {
+    background: rgba(249,115,22,0.25);
+    border-color: rgba(249,115,22,0.5); color: #FDBA74;
+  }
+  .badge.rojo {
+    background: rgba(239,68,68,0.2);
+    border-color: rgba(239,68,68,0.4); color: #FCA5A5;
+  }
+  .contenedor { max-width: 820px; margin: 0 auto; padding: 48px 24px 80px; }
+  .indice {
+    background: var(--blanco); border: 1px solid var(--borde);
+    border-radius: var(--radio); padding: 28px 32px; margin-bottom: 48px;
+  }
+  .indice-titulo {
+    font-family: 'Sora', sans-serif; font-size: 11px; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 1.5px; color: var(--gris-suave); margin-bottom: 16px;
+  }
+  .indice ol { list-style: none; columns: 2; column-gap: 24px; }
+  @media (max-width: 540px) { .indice ol { columns: 1; } }
+  .indice li { margin-bottom: 8px; }
+  .indice a {
+    font-family: 'Sora', sans-serif; font-size: 13px; color: var(--azul);
+    text-decoration: none; font-weight: 500; display: flex; align-items: baseline; gap: 6px;
+  }
+  .indice a:hover { color: var(--naranja); }
+  .indice a .num { font-size: 11px; color: var(--gris-suave); font-weight: 400; min-width: 22px; }
+  .seccion { margin-bottom: 40px; scroll-margin-top: 24px; }
+  .seccion-cabecera { display: flex; align-items: flex-start; gap: 16px; margin-bottom: 16px; }
+  .num-seccion {
+    background: var(--azul); color: white; font-family: 'Sora', sans-serif;
+    font-size: 12px; font-weight: 700;
+    min-width: 32px; height: 32px; border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0; margin-top: 2px;
+  }
+  .num-seccion.naranja { background: var(--naranja); }
+  h2 {
+    font-family: 'Sora', sans-serif;
+    font-weight: 600; font-size: 19px; color: var(--azul-oscuro); line-height: 1.3;
+  }
+  h3 {
+    font-family: 'Sora', sans-serif;
+    font-weight: 600; font-size: 15px; color: var(--azul); margin: 18px 0 8px;
+  }
+  p { margin-bottom: 12px; font-size: 15px; }
+  p:last-child { margin-bottom: 0; }
+  ul.lista { list-style: none; padding: 0; margin: 8px 0 12px; }
+  ul.lista li {
+    display: flex; align-items: flex-start;
+    gap: 10px; margin-bottom: 8px; font-size: 15px;
+  }
+  ul.lista li::before {
+    content: ''; width: 6px; height: 6px;
+    background: var(--naranja); border-radius: 50%;
+    flex-shrink: 0; margin-top: 8px;
+  }
+  .callout-warning {
+    background: #FFFBEB;
+    border: 1px solid #FDE68A;
+    border-left: 4px solid #F59E0B;
+    border-radius: 0 var(--radio) var(--radio) 0;
+    padding: 18px 22px; margin-bottom: 32px;
+  }
+  .callout-warning strong { color: #B45309; }
+  .callout-warning p { font-size: 15px; margin-bottom: 0; }
+  .ejemplo-box {
+    background: #EFF6FF; border: 1px solid #BFDBFE;
+    border-radius: var(--radio); padding: 16px 20px; margin: 16px 0; font-size: 15px;
+  }
+  .ejemplo-box strong { color: #1D4ED8; }
+  table.tabla {
+    width: 100%; border-collapse: collapse; margin: 16px 0;
+    font-size: 14px; font-family: 'Sora', sans-serif;
+  }
+  .tabla th {
+    background: var(--azul-oscuro); color: white;
+    padding: 10px 16px; text-align: left;
+    font-weight: 600; font-size: 12px; letter-spacing: 0.5px;
+  }
+  .tabla td {
+    padding: 10px 16px; border-bottom: 1px solid var(--borde); vertical-align: top;
+  }
+  .tabla tr:nth-child(even) td { background: rgba(26,79,168,0.03); }
+  .tabla td:first-child { font-weight: 600; color: var(--azul-oscuro); width: 32%; }
+  .divisor { border: none; border-top: 1px solid var(--borde); margin: 32px 0; }
+  .aceptacion {
+    background: var(--blanco); border: 1px solid var(--borde);
+    border-radius: var(--radio); padding: 24px 28px; text-align: center; margin-top: 48px;
+  }
+  .aceptacion p { font-size: 14px; color: var(--gris-suave); font-family: 'Sora', sans-serif; }
+  .aceptacion strong { color: var(--azul-oscuro); }
+  footer {
+    background: var(--azul-oscuro); color: rgba(255,255,255,0.6);
+    text-align: center; padding: 32px 24px;
+    font-family: 'Sora', sans-serif; font-size: 13px; line-height: 1.7;
+  }
+  footer a { color: var(--naranja); text-decoration: none; }
+  .footer-version {
+    display: inline-block; background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.12); border-radius: 999px;
+    padding: 4px 14px; font-size: 11px; margin-top: 10px; letter-spacing: 0.5px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo-marca">
+    <div class="logo-icono">
+      <svg viewBox="0 0 24 24"><path d="M3 9.5L12 3l9 6.5V21H3V9.5z"/></svg>
+    </div>
+    <span class="logo-nombre">ProServicios</span>
+  </div>
+  <h1>Términos y Condiciones</h1>
+  <div class="header-sub">para Técnicos / Prestadores Independientes</div>
+  <div class="badges">
+    <span class="badge">Versión 1.3</span>
+    <span class="badge">Abril 2026</span>
+    <span class="badge naranja">Ley Modernización Laboral 2026</span>
+    <span class="badge rojo">Ley 25.326</span>
+  </div>
+</header>
+
+<div class="contenedor">
+
+  <nav class="indice">
+    <div class="indice-titulo">Contenido</div>
+    <ol>
+      <li><a href="#s1"><span class="num">1.</span> Definiciones</a></li>
+      <li><a href="#s2"><span class="num">2.</span> No existe vínculo laboral</a></li>
+      <li><a href="#s3"><span class="num">3.</span> Requisitos para operar</a></li>
+      <li><a href="#s4"><span class="num">4.</span> Seguro de accidentes</a></li>
+      <li><a href="#s5"><span class="num">5.</span> Libertad de conexión</a></li>
+      <li><a href="#s6"><span class="num">6.</span> Sistema de asignación</a></li>
+      <li><a href="#s7"><span class="num">7.</span> Comisiones, pago y facturación</a></li>
+      <li><a href="#s8"><span class="num">8.</span> Responsabilidades del Técnico</a></li>
+      <li><a href="#s9"><span class="num">9.</span> Verificación y aprobación</a></li>
+      <li><a href="#s10"><span class="num">10.</span> Suspensión y derecho de réplica</a></li>
+      <li><a href="#s11"><span class="num">11.</span> Datos personales y GPS</a></li>
+      <li><a href="#s12"><span class="num">12.</span> Propiedad intelectual</a></li>
+      <li><a href="#s13"><span class="num">13.</span> Resolución de disputas</a></li>
+      <li><a href="#s14"><span class="num">14.</span> Fuerza mayor</a></li>
+      <li><a href="#s15"><span class="num">15.</span> Disposiciones generales</a></li>
+    </ol>
+  </nav>
+
+  <div class="callout-warning">
+    <p><strong>⚠️ IMPORTANTE: Leé este documento completo antes de aceptar.</strong><br>
+    Al registrarte como Técnico en ProServicios declarás haber leído, comprendido y aceptado estos Términos en su totalidad.</p>
+  </div>
+
+  <!-- 1 -->
+  <section class="seccion" id="s1">
+    <div class="seccion-cabecera">
+      <div class="num-seccion">1</div>
+      <h2>Definiciones</h2>
+    </div>
+    <ul class="lista">
+      <li><strong>Prestador / Técnico:</strong> Vos, persona física mayor de 18 años que ofrece servicios del hogar a través de la Plataforma.</li>
+      <li><strong>Plataforma / App:</strong> ProServicios, intermediaria tecnológica que conecta Técnicos con Clientes.</li>
+      <li><strong>Cliente / Solicitante:</strong> Persona que solicita y contrata tus servicios a través de la App.</li>
+      <li><strong>Pedido:</strong> Solicitud de servicio generada por el Cliente y asignada al Técnico.</li>
+      <li><strong>Comisión:</strong> El porcentaje que ProServicios agrega al precio base del Técnico en concepto de intermediación.</li>
+    </ul>
+  </section>
+  <hr class="divisor">
+
+  <!-- 2 -->
+  <section class="seccion" id="s2">
+    <div class="seccion-cabecera">
+      <div class="num-seccion">2</div>
+      <h2>Naturaleza de la relación — NO existe vínculo laboral</h2>
+    </div>
+    <p>Al registrarte en ProServicios lo hacés en calidad de prestador independiente de plataformas tecnológicas, en los términos de la <strong>Ley de Modernización Laboral (sancionada el 27 de febrero de 2026, vigente desde el 6 de marzo de 2026)</strong>.</p>
+    <p><strong>NO existe relación laboral, de dependencia, de subordinación ni societaria entre vos y ProServicios.</strong> No tenés derecho a indemnización por despido, aguinaldo, vacaciones pagas ni ningún otro beneficio propio del contrato de trabajo regulado por la Ley de Contrato de Trabajo (LCT).</p>
+    <p>La relación entre vos y ProServicios es de naturaleza comercial: ProServicios te brinda acceso a su plataforma tecnológica para que puedas contactar Clientes y gestionar tu actividad; vos prestás servicios de forma autónoma, con libertad de organización de tu trabajo y sin control horario de nuestra parte.</p>
+  </section>
+  <hr class="divisor">
+
+  <!-- 3 -->
+  <section class="seccion" id="s3">
+    <div class="seccion-cabecera">
+      <div class="num-seccion">3</div>
+      <h2>Requisitos obligatorios para operar</h2>
+    </div>
+    <p>Para poder registrarte y mantenerte activo en la Plataforma, debés cumplir en todo momento con los siguientes requisitos:</p>
+    <table class="tabla">
+      <thead><tr><th>Requisito</th><th>Detalle</th></tr></thead>
+      <tbody>
+        <tr><td>CUIT activo</td><td>Inscripción vigente ante ARCA (ex AFIP).</td></tr>
+        <tr><td>Monotributo o RI</td><td>Debés estar inscripto y facturar tus servicios al Cliente.</td></tr>
+        <tr><td>DNI vigente</td><td>Foto del frente y dorso. Datos deben coincidir con los registrados en ARCA.</td></tr>
+        <tr><td>Matrícula habilitante</td><td>Obligatoria para gasistas (Enargas), electricistas (COPIME u organismos equivalentes), plomeros y otras actividades reguladas.</td></tr>
+        <tr><td>Seguro de accidentes</td><td>Obligatorio por ley — ver Sección 4.</td></tr>
+        <tr><td>Foto de perfil real</td><td>Foto clara y reciente del rostro. No se aceptan logos, avatares ni imágenes de terceros.</td></tr>
+        <tr><td>Cuenta bancaria / CVU</td><td>Para recibir las transferencias de tus honorarios.</td></tr>
+        <tr><td>Solo personas físicas</td><td>No se admiten estructuras empresariales, sociedades ni agrupaciones sistematizadas.</td></tr>
+      </tbody>
+    </table>
+    <p>ProServicios puede solicitar la renovación de cualquiera de estos documentos si venció su vigencia. La falta de actualización puede derivar en la suspensión preventiva de tu cuenta.</p>
+  </section>
+  <hr class="divisor">
+
+  <!-- 4 -->
+  <section class="seccion" id="s4">
+    <div class="seccion-cabecera">
+      <div class="num-seccion">4</div>
+      <h2>Seguro de accidentes personales — obligatorio por ley</h2>
+    </div>
+    <p>Conforme a la Ley de Modernización Laboral (2026), los prestadores de servicios a través de plataformas tecnológicas deben contar con un seguro de accidentes personales activo durante toda prestación de servicios.</p>
+    <h3>4.1 Coberturas mínimas exigidas por la ley</h3>
+    <ul class="lista">
+      <li>Fallecimiento accidental.</li>
+      <li>Incapacidad total o parcial permanente derivada de accidente.</li>
+      <li>Gastos médicos y farmacéuticos derivados de accidente en el ejercicio de la actividad.</li>
+      <li>Gastos funerarios derivados de accidente en el ejercicio de la actividad.</li>
+    </ul>
+    <h3>4.2 Modelos de cobertura en ProServicios</h3>
+    <ul class="lista">
+      <li><strong>Modelo A — Póliza contratada por ProServicios:</strong> ProServicios contrata una póliza grupal/colectiva y el costo es absorbido en forma parcial o total por la Plataforma o prorrateado entre los Técnicos activos.</li>
+      <li><strong>Modelo B — Seguro propio del Técnico:</strong> ProServicios te exige acreditar que contás con tu propia póliza vigente con las coberturas mínimas del punto 4.1. Debés subir el certificado de cobertura en la App antes de activar tu cuenta.</li>
+    </ul>
+    <p>ProServicios te informará cuál modelo aplica al momento de tu registro o ante cambios. Operar sin cobertura de seguro activa está prohibido y puede derivar en la suspensión inmediata de tu cuenta.</p>
+  </section>
+  <hr class="divisor">
+
+  <!-- 5 -->
+  <section class="seccion" id="s5">
+    <div class="seccion-cabecera">
+      <div class="num-seccion">5</div>
+      <h2>Libertad de conexión — sin penalidades</h2>
+    </div>
+    <p>Conforme a la Ley de Modernización Laboral (2026), la Plataforma reconoce y garantiza tu libertad de conexión:</p>
+    <ul class="lista">
+      <li>Podés conectarte y desconectarte cuando quieras, sin horarios ni cupos mínimos obligatorios.</li>
+      <li>Podés rechazar cualquier pedido sin necesidad de dar explicaciones y sin que eso genere penalidades ni pérdida de posición en el sistema de asignación.</li>
+      <li>Podés operar simultáneamente en otras plataformas similares, siempre que no incumplas obligaciones legales propias o acuerdos de exclusividad que hayas aceptado voluntariamente.</li>
+    </ul>
+    <p>ProServicios puede registrar estadísticas de aceptación y rechazo de pedidos con fines de mejora del servicio, pero nunca para penalizar o degradar tu posición en la plataforma por ejercer tu derecho de rechazo.</p>
+  </section>
+  <hr class="divisor">
+
+  <!-- 6 -->
+  <section class="seccion" id="s6">
+    <div class="seccion-cabecera">
+      <div class="num-seccion naranja">6</div>
+      <h2>Transparencia del sistema de asignación</h2>
+    </div>
+    <p>Conforme a la normativa vigente, tenés derecho a conocer los criterios con los que la Plataforma agrupa y asigna los pedidos. Los criterios actuales son:</p>
+    <ul class="lista">
+      <li><strong>Proximidad geográfica:</strong> Los pedidos se ofrecen prioritariamente a los Técnicos más cercanos a la ubicación del Cliente.</li>
+      <li><strong>Categoría habilitada:</strong> Solo recibís pedidos de las categorías de servicios que tenés activas en tu perfil.</li>
+      <li><strong>Calificación promedio:</strong> Los pedidos disponibles se hacen visibles de forma progresiva según la calificación del Técnico (ver tabla).</li>
+      <li><strong>Disponibilidad declarada:</strong> Tu estado activo/inactivo en la App determina si entrás al pool de asignación.</li>
+    </ul>
+    <table class="tabla">
+      <thead><tr><th>Calificación promedio</th><th>Visibilidad del pedido</th></tr></thead>
+      <tbody>
+        <tr><td>≥ 4,5 estrellas</td><td>Inmediato</td></tr>
+        <tr><td>4,0 a 4,4 estrellas</td><td>A los 5 minutos de publicado el pedido</td></tr>
+        <tr><td>&lt; 4,0 estrellas</td><td>A los 10 minutos de publicado el pedido</td></tr>
+        <tr><td>Sin calificaciones (nuevo)</td><td>Inmediato — sin penalización</td></tr>
+      </tbody>
+    </table>
+    <p>Si en el futuro se incorporan nuevos criterios de asignación, te lo informaremos con al menos 30 días de anticipación.</p>
+  </section>
+  <hr class="divisor">
+
+  <!-- 7 -->
+  <section class="seccion" id="s7">
+    <div class="seccion-cabecera">
+      <div class="num-seccion">7</div>
+      <h2>Comisiones, flujo de pago y facturación</h2>
+    </div>
+    <h3>7.1 Comisión de la Plataforma</h3>
+    <p>ProServicios agrega el <strong>18% sobre el precio base del servicio</strong> en concepto de comisión por intermediación. Ese porcentaje se suma al precio base y el resultado es lo que abona el Cliente; vos recibís el precio base íntegro.</p>
+    <div class="ejemplo-box">
+      <strong>Ejemplo:</strong> Si el precio acordado para un trabajo es de $50.000, el Cliente paga $59.000 (con el 18% de comisión incluido), y vos recibís $50.000. ProServicios retiene $9.000.
+    </div>
+    <h3>7.2 Flujo del pago</h3>
+    <ul class="lista">
+      <li>El Cliente paga el total del servicio (precio base + comisión ProServicios) a través de Mercado Pago u otro medio integrado en la App.</li>
+      <li>ProServicios actúa como intermediario de cobro: recibe el pago total, retiene su comisión y transfiere el precio base íntegro a tu cuenta bancaria / CVU.</li>
+      <li>El plazo de transferencia es de máximo <strong>72 horas hábiles</strong> desde la confirmación del pago por parte del admin.</li>
+      <li>Al registrarte, autorizás expresamente a ProServicios a actuar como intermediario de cobro y a retener su comisión antes de transferirte el saldo.</li>
+    </ul>
+    <h3>7.3 Facturación</h3>
+    <ul class="lista">
+      <li>ProServicios emitirá factura al Cliente por su comisión de intermediación.</li>
+      <li>Vos, como Prestador, debés emitir factura al Cliente por el precio base de tu servicio (el monto que vos acordaste, sin incluir la comisión de ProServicios), conforme a tu situación fiscal ante ARCA.</li>
+      <li>Sos responsable exclusivo de cumplir con tus obligaciones fiscales como monotributista o Responsable Inscripto, incluyendo el pago de tus cuotas a ARCA y los aportes al sistema de seguridad social.</li>
+    </ul>
+    <h3>7.4 Deducciones por reclamos</h3>
+    <p>En caso de reclamo válido del Cliente por daños atribuibles al Prestador, ProServicios puede retener del próximo pago el monto acordado como compensación, previa notificación y derecho a descargo del Técnico.</p>
+  </section>
+  <hr class="divisor">
+
+  <!-- 8 -->
+  <section class="seccion" id="s8">
+    <div class="seccion-cabecera">
+      <div class="num-seccion">8</div>
+      <h2>Responsabilidades del Técnico</h2>
+    </div>
+    <p>Como Prestador independiente, sos responsable exclusivo de:</p>
+    <ul class="lista">
+      <li>La ejecución, calidad, resultado y seguridad del servicio prestado.</li>
+      <li>Cualquier daño personal, material o económico causado al Cliente, a terceros o a la propiedad durante o como consecuencia del servicio.</li>
+      <li>Cumplir con toda la normativa técnica, de seguridad y de habilitación profesional aplicable a tu oficio (Código de Edificación, normas IRAM, reglamentaciones de Enargas, ENRE, etc.).</li>
+      <li>Mantener vigentes tu matrícula habilitante y tu póliza de seguro durante toda tu actividad en la Plataforma.</li>
+      <li>Registrar y declarar correctamente tus ingresos ante ARCA y emitir las facturas correspondientes a los Clientes.</li>
+    </ul>
+    <p>ProServicios no asume responsabilidad alguna por los daños o perjuicios derivados de la actividad del Técnico.</p>
+  </section>
+  <hr class="divisor">
+
+  <!-- 9 -->
+  <section class="seccion" id="s9">
+    <div class="seccion-cabecera">
+      <div class="num-seccion">9</div>
+      <h2>Proceso de verificación y aprobación</h2>
+    </div>
+    <p>El alta de tu cuenta en ProServicios no es automática. El equipo de ProServicios revisa manualmente cada perfil antes de aprobarlo. El proceso incluye:</p>
+    <ul class="lista">
+      <li>Validación de CUIT en ARCA.</li>
+      <li>Verificación de identidad mediante DNI y fotografía.</li>
+      <li>Verificación de matrícula habilitante cuando corresponde.</li>
+      <li>Revisión de foto de perfil.</li>
+      <li>Verificación de constancia de seguro (según el modelo vigente).</li>
+    </ul>
+    <p>ProServicios puede rechazar o demorar aprobaciones. El motivo será informado al Técnico si lo solicita en ejercicio de su derecho de réplica (ver Sección 10).</p>
+  </section>
+  <hr class="divisor">
+
+  <!-- 10 -->
+  <section class="seccion" id="s10">
+    <div class="seccion-cabecera">
+      <div class="num-seccion">10</div>
+      <h2>Suspensión, baja y derecho de réplica</h2>
+    </div>
+    <h3>10.1 Causas de suspensión o baja</h3>
+    <ul class="lista">
+      <li>Documentación vencida o inválida (matrícula, seguro, monotributo).</li>
+      <li>Calificaciones reiteradas de 1 o 2 estrellas con quejas fundadas de Clientes.</li>
+      <li>Fraude, uso de identidad falsa o datos incorrectos.</li>
+      <li>Daños graves causados a Clientes o a sus propiedades.</li>
+      <li>Incumplimiento de estos Términos y Condiciones.</li>
+      <li>Conductas abusivas, discriminatorias o de acoso hacia Clientes u otros usuarios.</li>
+    </ul>
+    <h3>10.2 Derecho de réplica — obligación legal</h3>
+    <p>Conforme a la Ley de Modernización Laboral (2026), tenés derecho a:</p>
+    <ul class="lista">
+      <li>Ser informado del motivo de cualquier suspensión o baja dentro de las 48 horas de la medida.</li>
+      <li>Presentar un descargo o explicación ante ProServicios dentro de los 5 días hábiles de notificado.</li>
+      <li>Recibir una respuesta fundada de ProServicios dentro de los 10 días hábiles siguientes a tu descargo.</li>
+    </ul>
+    <p>Para ejercer tu derecho de réplica, escribí a <a href="mailto:proserviciost@gmail.com" style="color:var(--azul);">proserviciost@gmail.com</a> con el asunto <strong>"DERECHO DE REPLICA — [tu nombre y CUIT]"</strong>.</p>
+  </section>
+  <hr class="divisor">
+
+  <!-- 11 -->
+  <section class="seccion" id="s11">
+    <div class="seccion-cabecera">
+      <div class="num-seccion">11</div>
+      <h2>Protección de datos personales y GPS (Ley 25.326)</h2>
+    </div>
+    <p>ProServicios trata los siguientes datos tuyos para operar la Plataforma:</p>
+    <ul class="lista">
+      <li>Identidad: nombre, apellido, DNI, CUIT, email, teléfono, foto de perfil.</li>
+      <li>Documentación profesional: matrículas, constancias de seguro, certificados.</li>
+      <li>Ubicación GPS: durante los pedidos activos, tu posición en tiempo real es transmitida a Firebase y visible para el Cliente en el mapa de la App. Este trackeo se activa solo cuando aceptás un pedido y se desactiva al marcarlo como completado o cancelado. Fuera de esa ventana, no registramos tu posición.</li>
+      <li>Historial de pedidos y calificaciones recibidas.</li>
+    </ul>
+    <p>Al aceptar estos Términos, consentís expresamente que tu ubicación sea compartida con el Cliente durante la prestación activa del servicio. Tus datos no son vendidos ni cedidos a terceros con fines comerciales. Podés ejercer tus derechos de acceso, rectificación y supresión escribiendo a <a href="mailto:proserviciost@gmail.com" style="color:var(--azul);">proserviciost@gmail.com</a>.</p>
+  </section>
+  <hr class="divisor">
+
+  <!-- 12 -->
+  <section class="seccion" id="s12">
+    <div class="seccion-cabecera">
+      <div class="num-seccion">12</div>
+      <h2>Propiedad intelectual</h2>
+    </div>
+    <p>Todo el contenido de la App (texto, diseño, software, marcas, base de datos, logotipos y demás elementos) es propiedad de ProServicios o de terceros que le han cedido licencias, y está protegido por la legislación argentina e internacional de propiedad intelectual.</p>
+    <p>Queda estrictamente prohibido copiar, distribuir, modificar, reproducir o crear obras derivadas de cualquier elemento de la Plataforma sin autorización expresa y por escrito de ProServicios.</p>
+  </section>
+  <hr class="divisor">
+
+  <!-- 13 -->
+  <section class="seccion" id="s13">
+    <div class="seccion-cabecera">
+      <div class="num-seccion">13</div>
+      <h2>Resolución de disputas</h2>
+    </div>
+    <p>Ante cualquier inconveniente, el primer canal de resolución es el soporte de la App o por email a <a href="mailto:proserviciost@gmail.com" style="color:var(--azul);">proserviciost@gmail.com</a>. Nos comprometemos a responder dentro de las 48 horas hábiles.</p>
+    <p>De persistir el desacuerdo, las partes se someten a mediación conforme a la Ley 24.573. Si no hay acuerdo en la mediación, serán competentes los tribunales ordinarios del Departamento Judicial de San Isidro, Provincia de Buenos Aires.</p>
+    <p><strong>Ley aplicable:</strong> República Argentina — Ley de Modernización Laboral 2026, Ley 25.326 y Código Civil y Comercial de la Nación.</p>
+  </section>
+  <hr class="divisor">
+
+  <!-- 14 -->
+  <section class="seccion" id="s14">
+    <div class="seccion-cabecera">
+      <div class="num-seccion">14</div>
+      <h2>Fuerza mayor</h2>
+    </div>
+    <p>ProServicios no será responsable por incumplimientos o demoras ocasionados por causas ajenas a su control razonable, incluyendo sin limitación: huelgas, desastres naturales, pandemias, cortes de suministro eléctrico, fallas masivas de telecomunicaciones o internet, actos gubernamentales u otros eventos de fuerza mayor. ProServicios informará a los usuarios afectados con la mayor celeridad posible y restablecerá el servicio en cuanto las circunstancias lo permitan.</p>
+  </section>
+  <hr class="divisor">
+
+  <!-- 15 -->
+  <section class="seccion" id="s15">
+    <div class="seccion-cabecera">
+      <div class="num-seccion">15</div>
+      <h2>Disposiciones generales</h2>
+    </div>
+    <h3>15.1 Modificaciones a estos Términos</h3>
+    <p>Podemos actualizar estos Términos notificándote con al menos <strong>30 días de anticipación</strong>. Si continuás operando en la Plataforma luego del aviso, aceptás los nuevos términos. Para Pedidos ya confirmados al momento del cambio, subsistirán las condiciones vigentes al momento de su aceptación.</p>
+    <h3>15.2 Notificaciones como medio válido</h3>
+    <p>Las notificaciones push, emails y avisos en la App son medios de comunicación legalmente válidos y vinculantes entre ProServicios y el Técnico. Al aceptar estos Términos, reconocés estos canales como suficientes para todas las comunicaciones relevantes.</p>
+    <h3>15.3 Cesión de derechos y obligaciones</h3>
+    <p>El Técnico no puede ceder sus derechos u obligaciones bajo estos Términos a terceros. ProServicios podrá ceder sus derechos y obligaciones (por ejemplo, en caso de fusión o venta de la empresa), notificándolo al Técnico con anticipación razonable.</p>
+    <h3>15.4 Independencia de cláusulas</h3>
+    <p>Si alguna disposición fuera declarada inválida por un tribunal, las restantes conservarán plena vigencia.</p>
+    <h3>15.5 Idioma y versiones</h3>
+    <p>En caso de discrepancia entre versiones en distintos idiomas, prevalece la versión en español. Podés solicitar versiones anteriores de estos Términos a <a href="mailto:proserviciost@gmail.com" style="color:var(--azul);">proserviciost@gmail.com</a>.</p>
+  </section>
+
+  <hr class="divisor">
+
+  <div class="aceptacion">
+    <p>Al registrarte o continuar operando en ProServicios,<br><strong>aceptás estos Términos y Condiciones en su totalidad.</strong></p>
+  </div>
+
+</div>
+
+<footer>
+  <div>ProServicios &nbsp;|&nbsp; <a href="mailto:proserviciost@gmail.com">proserviciost@gmail.com</a></div>
+  <div class="footer-version">Versión 1.3 — Abril 2026</div>
+</footer>
+
+</body>
+</html>
