@@ -190,7 +190,7 @@
   <h1>Términos y Condiciones</h1>
   <div class="header-sub">para Técnicos / Prestadores Independientes</div>
   <div class="badges">
-    <span class="badge">Versión 1.3</span>
+    <span class="badge">Versión 1.4</span>
     <span class="badge">Abril 2026</span>
     <span class="badge naranja">Ley Modernización Laboral 2026</span>
     <span class="badge rojo">Ley 25.326</span>
@@ -269,7 +269,7 @@
         <tr><td>Matrícula habilitante</td><td>Obligatoria para gasistas (Enargas), electricistas (COPIME u organismos equivalentes), plomeros y otras actividades reguladas.</td></tr>
         <tr><td>Seguro de accidentes</td><td>Obligatorio por ley — ver Sección 4.</td></tr>
         <tr><td>Foto de perfil real</td><td>Foto clara y reciente del rostro. No se aceptan logos, avatares ni imágenes de terceros.</td></tr>
-        <tr><td>Cuenta bancaria / CVU</td><td>Para recibir las transferencias de tus honorarios.</td></tr>
+        <tr><td>Cuenta de Mercado Pago</td><td>Obligatoria para recibir tus honorarios. El pago se procesa íntegramente a través del sistema de split de pagos de Mercado Pago; no se realizan transferencias bancarias directas desde ProServicios.</td></tr>
         <tr><td>Solo personas físicas</td><td>No se admiten estructuras empresariales, sociedades ni agrupaciones sistematizadas.</td></tr>
       </tbody>
     </table>
@@ -353,17 +353,19 @@
     <div class="ejemplo-box">
       <strong>Ejemplo:</strong> Si el precio acordado para un trabajo es de $50.000, el Cliente paga $59.000 (con el 18% de comisión incluido), y vos recibís $50.000. ProServicios retiene $9.000.
     </div>
-    <h3>7.2 Flujo del pago</h3>
+    <h3>7.2 Flujo del pago — split de pagos vía Mercado Pago</h3>
+    <p>El único medio de pago de la Plataforma es <strong>Mercado Pago</strong>, a través del mecanismo de <strong>split de pagos (Marketplace MP)</strong>. Así funciona el proceso:</p>
     <ul class="lista">
-      <li>El Cliente paga el total del servicio (precio base + comisión ProServicios) a través de Mercado Pago u otro medio integrado en la App.</li>
-      <li>ProServicios actúa como intermediario de cobro: recibe el pago total, retiene su comisión y transfiere el precio base íntegro a tu cuenta bancaria / CVU.</li>
-      <li>El plazo de transferencia es de máximo <strong>72 horas hábiles</strong> desde la confirmación del pago por parte del admin.</li>
-      <li>Al registrarte, autorizás expresamente a ProServicios a actuar como intermediario de cobro y a retener su comisión antes de transferirte el saldo.</li>
+      <li>El Cliente abona el total del servicio (precio base + comisión ProServicios) directamente en Mercado Pago desde la App.</li>
+      <li>Mercado Pago divide automáticamente el cobro en el momento de la transacción: <strong>tu precio base</strong> queda acreditado en tu cuenta de Mercado Pago y <strong>la comisión de ProServicios</strong> es retenida directamente por la Plataforma. No existe transferencia posterior desde ProServicios hacia vos.</li>
+      <li>Los plazos de disponibilidad del dinero en tu cuenta de Mercado Pago se rigen por las políticas de acreditación de Mercado Pago y pueden variar según el medio de pago utilizado por el Cliente (débito inmediato, crédito a 48 hs, etc.).</li>
+      <li>ProServicios no almacena ni procesa datos de tarjetas de crédito/débito; toda la información de pago es gestionada exclusivamente por Mercado Pago conforme a sus propios estándares de seguridad (PCI DSS).</li>
+      <li>Al registrarte, autorizás expresamente a ProServicios a operar como Marketplace en Mercado Pago y a aplicar el split automático de pagos conforme a las condiciones aquí descriptas.</li>
     </ul>
     <h3>7.3 Facturación</h3>
     <ul class="lista">
-      <li>ProServicios emitirá factura al Cliente por su comisión de intermediación.</li>
-      <li>Vos, como Prestador, debés emitir factura al Cliente por el precio base de tu servicio (el monto que vos acordaste, sin incluir la comisión de ProServicios), conforme a tu situación fiscal ante ARCA.</li>
+      <li>ProServicios emitirá factura al Cliente por su comisión de intermediación (el 18% retenido automáticamente vía split de Mercado Pago).</li>
+      <li>Vos, como Prestador, debés emitir factura al Cliente por el precio base de tu servicio (el monto que vos acordaste, sin incluir la comisión de ProServicios), conforme a tu situación fiscal ante ARCA. El comprobante de la transacción de Mercado Pago puede servir como respaldo, pero no reemplaza tu obligación de facturar.</li>
       <li>Sos responsable exclusivo de cumplir con tus obligaciones fiscales como monotributista o Responsable Inscripto, incluyendo el pago de tus cuotas a ARCA y los aportes al sistema de seguridad social.</li>
     </ul>
     <h3>7.4 Deducciones por reclamos</h3>
@@ -511,7 +513,7 @@
 
 <footer>
   <div>ProServicios &nbsp;|&nbsp; <a href="mailto:proserviciost@gmail.com">proserviciost@gmail.com</a></div>
-  <div class="footer-version">Versión 1.3 — Abril 2026</div>
+  <div class="footer-version">Versión 1.4 — Abril 2026</div>
 </footer>
 
 </body>
