@@ -321,7 +321,7 @@
   </div>
   <h1>Política de Privacidad</h1>
   <div class="badges">
-    <span class="badge">Versión 1.2</span>
+    <span class="badge">Versión 1.3</span>
     <span class="badge">Abril 2026</span>
     <span class="badge naranja">Ley 25.326</span>
   </div>
@@ -415,7 +415,7 @@
     <ul class="lista">
       <li><strong>Directamente:</strong> cuando te registrás, completás formularios, subís fotos o interactuás en la app.</li>
       <li><strong>Automáticamente:</strong> mediante sensores del dispositivo (ubicación con consentimiento), cookies y logs del servidor.</li>
-      <li><strong>De terceros:</strong> Mercado Pago (datos de pago anonimizados) y OpenStreetMap (cartografía para geolocalización, sin envío de datos personales).</li>
+      <li><strong>De terceros:</strong> Mercado Pago (datos de transacción anonimizados generados por el split de pagos) y OpenStreetMap (cartografía para geolocalización, sin envío de datos personales).</li>
     </ul>
   </section>
 
@@ -428,7 +428,7 @@
     <ul class="lista">
       <li>Permitir el registro y uso de la Plataforma.</li>
       <li>Conectar Clientes con Prestadores cercanos y gestionar pedidos.</li>
-      <li>Procesar pagos y comisiones vía Mercado Pago.</li>
+      <li>Procesar pagos y distribuir comisiones mediante el sistema de <strong>split de pagos de Mercado Pago</strong> (Marketplace MP). ProServicios no almacena datos de tarjetas ni información financiera sensible.</li>
       <li>Verificar identidad y matrículas de Prestadores.</li>
       <li>Enviar notificaciones push, emails o mensajes sobre pedidos y estado de servicios.</li>
       <li>Mejorar la app mediante análisis estadístico anónimo.</li>
@@ -448,7 +448,7 @@
     <p>Sí, solo cuando es necesario y con las salvaguardas correspondientes:</p>
     <ul class="lista">
       <li><strong>Prestadores:</strong> nombre, teléfono, dirección y descripción del pedido del Cliente (solo lo indispensable).</li>
-      <li><strong>Mercado Pago:</strong> datos necesarios para procesar pagos (no almacenamos tarjetas ni CVV).</li>
+      <li><strong>Mercado Pago (Mercado Libre S.R.L.):</strong> procesador exclusivo de pagos. Gestionamos los cobros mediante el mecanismo de split de pagos (Marketplace MP): al confirmarse un pago, MP divide automáticamente el importe entre ProServicios (comisión) y el Prestador (honorarios). No almacenamos tarjetas, CVV ni datos financieros; esa información es procesada exclusivamente por Mercado Pago bajo sus estándares PCI DSS.</li>
       <li><strong>OpenStreetMap:</strong> cartografía para mostrar mapas y geolocalizar pedidos (sin envío de datos personales identificables).</li>
       <li><strong>Firebase / Google (Estados Unidos):</strong> almacenamiento seguro en la nube (Firestore), autenticación (Firebase Auth), análisis de uso (Firebase Analytics) y reporte de errores (Crashlytics). Google LLC está sujeta a las leyes de EE.UU. Se han implementado las salvaguardas contractuales adecuadas para esta transferencia internacional.</li>
       <li><strong>Autoridades:</strong> si lo requiere una orden judicial o norma legal.</li>
@@ -560,7 +560,7 @@
     <p>Algunos de nuestros proveedores tecnológicos tienen sus servidores fuera de la República Argentina, principalmente en los Estados Unidos:</p>
     <ul class="lista">
       <li><strong>Google LLC / Firebase:</strong> proveedor de Firestore (base de datos), Firebase Auth (autenticación), Firebase Analytics y Crashlytics. Google LLC opera bajo la legislación de los Estados Unidos y adhiere a los marcos de protección de datos internacionalmente reconocidos.</li>
-      <li><strong>Mercado Libre / Mercado Pago:</strong> procesador de pagos con operaciones en Argentina y otros países de la región.</li>
+      <li><strong>Mercado Libre S.R.L. / Mercado Pago:</strong> procesador exclusivo de pagos con operaciones principalmente en Argentina y otros países de la región. Utilizamos su sistema de split de pagos (Marketplace MP) para distribuir automáticamente el importe de cada transacción entre ProServicios y el Prestador.</li>
     </ul>
     <p>Al usar la Plataforma, aceptás que tus datos puedan ser transferidos y procesados en servidores ubicados fuera de Argentina, con las salvaguardas técnicas y contractuales correspondientes para garantizar un nivel de protección adecuado conforme a la Ley 25.326 y las disposiciones de la AAIP.</p>
   </section>
@@ -588,7 +588,7 @@
 
 <footer>
   <div>ProServicios &nbsp;|&nbsp; <a href="mailto:proserviciost@gmail.com">proserviciost@gmail.com</a></div>
-  <div class="footer-version">Versión 1.2 — Abril 2026</div>
+  <div class="footer-version">Versión 1.3 — Abril 2026</div>
 </footer>
 
 </body>
